@@ -67,6 +67,18 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	USceneComponent* RenderSpectrometerPointCloudComp;
 
+	// Declare a reference to the LidarSensorComponent class
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
+	ULidarSensorComponent* LidarSensorComp;
+
+	// Declare a reference to the  SpectrometerComponent class
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
+	USpectrometerComponent* SpectrometerComp;
+
+	// Declare a reference to the PointCloudComponent class for rendering the lidar point cloud
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
+	UPointCloudComponent* PointCloudComp;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -82,17 +94,5 @@ private:
 	// Declare an reference to the RoverMovementComponent class
 	UPROPERTY(VisibleAnywhere, Category = "Components")
 	URoverMovementComponent* RoverMovementComp;
-
-	// Declare a reference to the LidarSensorComponent class
-	UPROPERTY(VisibleAnywhere, Category = "Components")
-	ULidarSensorComponent* LidarSensorComp;
-
-	// Declare a reference to the  SpectrometerComponent class
-	UPROPERTY(VisibleAnywhere, Category = "Components")
-	USpectrometerComponent* SpectrometerComp;
-
-	// Declare a reference to the PointCloudComponent class for rendering the lidar point cloud
-	UPROPERTY(VisibleAnywhere, Category = "Components")
-	UPointCloudComponent* PointCloudComp;
 
 };

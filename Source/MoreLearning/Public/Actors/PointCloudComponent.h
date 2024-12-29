@@ -34,9 +34,9 @@ public:
 
 	// Paramter to toggle on/off lidar point cloud 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PointCloudParams")
-	bool RenderPointCloudParam = true;
+	bool RenderPointCloudParam = false;
 
 	// Paramter to toggle on/off lidar point cloud 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PointCloudParams")
-	bool RenderSpectralWaterChannelParam = true;
+	bool RenderSpectralWaterChannelParam = false;
 };
